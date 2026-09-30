@@ -1,0 +1,15 @@
+# Local PGlite data directory used by tools/dbtest/serve.mjs
+tools/dbtest/.pgdata/
+tools/dbtest/node_modules/
+
+# Compiled binaries
+/services/ingress/bin/
+*.exe
+
+# Local env / secrets
+.env
+.env.*
+!.env.example
+
+# Windows NTFS alternate data streams, visible on this DrvFs mount
+*Zone.Identifier

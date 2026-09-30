@@ -1,0 +1,15 @@
+{
+  "name": "chipmank-dbtest",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Applies db/migrations to an in-process Postgres (PGlite) and runs the tenant-isolation acceptance tests. Also serves the same database over the Postgres wire protocol for the Go integration tests.",
+  "scripts": {
+    "test": "node run.mjs",
+    "serve": "node serve.mjs"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "^0.5.8",
+    "@electric-sql/pglite-socket": "^0.2.11"
+  }
+}
